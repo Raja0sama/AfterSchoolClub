@@ -27,7 +27,18 @@
 			<figure>
 				<img class="w-full" v-bind:src=school.image>
       </figure>
-      
+      <div class="p-4">
+      <div class="flex justify-between">
+      <h2 class="font-bold	" v-text="school.title"></h2>
+  
+      </div>
+      <p>Location: {{school.location}}</p>
+      <p>Price: ${{school.price}}</p>
+      </div>
+     
+      </div>
+      </div>
+      </main>
 	  </div>
 
 	<script src="main.js">
