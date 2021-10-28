@@ -30,12 +30,14 @@
       <div class="p-4">
       <div class="flex justify-between">
       <h2 class="font-bold	" v-text="school.title"></h2>
-  
+      
       </div>
       <p>Location: {{school.location}}</p>
       <p>Price: ${{school.price}}</p>
       </div>
      
+      <button class="p-1 bg-purple-600 bg-opacity-75 w-full text-center text-white " v-bind:disabled="!canAddToCart" v-on:click='addToCart' > Add to Cart
+      </button>
       </div>
       </div>
       </main>
